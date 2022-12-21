@@ -108,7 +108,7 @@ span {
 section {
     background-color: whitesmoke;
     width: 100%;
-    padding: 100px 100px;
+    padding: 100px 0px;
 }
 .title  {
     text-align: center;
@@ -140,7 +140,7 @@ p {
     letter-spacing: 2px;
     line-height: 30px;
     font-size: 18px;
-    padding: 0px 40px;
+    /* padding: 0px 40px; */
 }
 .about .ctn {
     font-size: 20px;
@@ -155,7 +155,7 @@ img:hover {
 .service {
     background: white;
     width: 100%;
-    padding: 100px 100px;
+    padding: 100px 0px;
 }
 .box {
     color: black;
@@ -163,7 +163,7 @@ img:hover {
     text-align: center;
 }
 .service .row {
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .service .column {
     /* justify-content: space-around; */
@@ -180,7 +180,6 @@ img:hover {
 .service .column img {
     width: 50%;
     height: 50%;
-    object-fit: cover;
 }
 .service h4 {
     color: black;
@@ -240,6 +239,7 @@ img:hover {
     }
     .row {
         flex-direction: column;
+        justify-content: space-evenly;
     }
     .row .column {
         margin: 20px auto;
@@ -248,7 +248,7 @@ img:hover {
         max-width: 90%;
     }
     p {
-        padding: 10px;
+        /* padding: 10px; */
         font-size: 13px;
         font-weight: bold;
     }
