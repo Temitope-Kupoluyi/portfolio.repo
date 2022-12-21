@@ -98,12 +98,17 @@ span {
     cursor: pointer;
     display: none;
 }
+.ctn:hover {
+    background: whitesmoke;
+    color: black;
+    box-shadow: 2px 2px 5px #00000056;
+}
 
 /* About */
 section {
     background-color: whitesmoke;
     width: 100%;
-    padding: 100px 0;
+    padding: 100px 100px;
 }
 .title  {
     text-align: center;
@@ -113,8 +118,8 @@ section {
 .row {
     display: flex;
     align-items: center;
-    width: 80%;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: space-evenly;
     padding: 30px;
 }
 .row .column {
@@ -142,12 +147,15 @@ p {
     padding: 10px 14px;
     margin-top: 30px;
 }
+img:hover {
+    transform: scale(1.1);
+}
 
 /* Sevices */
 .service {
     background: white;
     width: 100%;
-    padding: 100px 0px;
+    padding: 100px 100px;
 }
 .box {
     color: black;
@@ -158,8 +166,11 @@ p {
     justify-content: space-around;
 }
 .service .column {
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    /* align-items: center; */
     background: beige;
+    /* width: 60%;
+    height: 70%; */
     padding: 25px 24px;
     border: 2px solid transparent;
     border-radius: 15px;
@@ -168,7 +179,8 @@ p {
 }
 .service .column img {
     width: 50%;
-    height: auto;
+    height: 50%;
+    object-fit: cover;
 }
 .service h4 {
     color: black;
@@ -178,25 +190,18 @@ p {
 }
 
 
-/* Contact */
-.contact {
-    background-color: cornsilk;
-    width: 100%;
-    padding: 100px 0;
-}
-
 /* Footer */
 .footer {
     width: 100%;
     min-height: 100px;
     padding: 20px 80px;
     margin: 0;
-    background: #484872;
+    background: rgb(124, 115, 103);
     text-align: center;
 }
 .footer p {
-    color: whitesmoke;
-    margin: 15px auto;
+    color: black;
+    margin: 20px auto;
 }
 
 @media only screen and (max-width:850px) {
